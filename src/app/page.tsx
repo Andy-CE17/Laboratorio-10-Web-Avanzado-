@@ -37,7 +37,7 @@ export default async function Home() {
           <div className="relative min-h-[18rem] overflow-hidden sm:min-h-[23rem]">
             <div className="portal-ring absolute left-[52%] top-[48%] h-56 w-56 -translate-x-1/2 -translate-y-1/2 rounded-full sm:h-80 sm:w-80" />
             <div className="absolute inset-x-[8%] bottom-[2%] h-24 rounded-full bg-[#39f5a0]/20 blur-3xl" />
-            <Image src="https://www.pngitem.com/pimgs/m/530-5301192_rickipedia-rick-and-morty-rick-standing-hd-png.png" alt="Rick Sanchez explorando el portal" width={900} height={1100} priority unoptimized className="hero-character absolute bottom-[-8%] left-1/2 z-20 h-auto w-[53%] -translate-x-1/2 drop-shadow-[0_25px_35px_rgba(0,0,0,0.72)] sm:w-[47%]" />
+            <Image src="/images/rick-hero-cutout.png" alt="Rick Sanchez explorando el portal" width={840} height={859} priority className="hero-character absolute bottom-[-10%] left-1/2 z-20 h-auto w-[48%] -translate-x-1/2 drop-shadow-[0_25px_35px_rgba(0,0,0,0.72)] sm:w-[43%]" />
           </div>
         </div>
       </section>
