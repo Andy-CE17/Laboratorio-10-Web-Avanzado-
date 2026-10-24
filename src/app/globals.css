@@ -1,9 +1,6 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+:root { --background: #031019; --foreground: #f8fbff; }
 
 @theme inline {
   --color-background: var(--background);
@@ -12,15 +9,15 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
-}
+* { scroll-behavior: smooth; }
+body { background: var(--background); color: var(--foreground); font-family: Arial, Helvetica, sans-serif; }
+.hero-space { background: linear-gradient(112deg, #031019 0%, #05212a 53%, #031019 100%); }
+.star-field { background-image: radial-gradient(#bdfbd2 1px, transparent 1px), radial-gradient(#6ef8ad 1px, transparent 1px); background-position: 0 0, 24px 31px; background-size: 58px 58px, 83px 83px; }
+.portal-ring { border: 14px solid rgba(79, 252, 137, .72); box-shadow: 0 0 0 7px rgba(17, 151, 82, .34), 0 0 65px rgba(47, 239, 107, .75), inset 0 0 45px rgba(49, 255, 130, .66); animation: portalPulse 3.8s ease-in-out infinite; }
+.hero-character { animation: characterFloat 5s ease-in-out infinite; }
+.hero-character-delay { animation: characterFloat 5.5s ease-in-out .5s infinite; }
+.hero-blend { -webkit-mask-image: radial-gradient(ellipse 51% 63% at 50% 50%, #000 52%, transparent 100%); mask-image: radial-gradient(ellipse 51% 63% at 50% 50%, #000 52%, transparent 100%); }
+.nav-active { color: white; position: relative; }
+.nav-active::after { background: #47f49a; bottom: -11px; content: ""; height: 2px; left: 0; position: absolute; width: 100%; }
+@keyframes portalPulse { 0%,100% { filter: brightness(.92); transform: translate(-50%,-50%) scale(.97) rotate(0); } 50% { filter: brightness(1.25); transform: translate(-50%,-50%) scale(1.04) rotate(3deg); } }
+@keyframes characterFloat { 0%,100% { transform: translateY(0); } 50% { transform: translateY(-8px); } }
