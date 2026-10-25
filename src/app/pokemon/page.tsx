@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { PokemonListResponse, SimplePokemon } from "@/types/pokemon";
-import { IoAdd, IoGameController, IoList } from "react-icons/io5";
+import { IoArrowBack } from "react-icons/io5";
 import { IoMdList } from "react-icons/io";
 import Image from "next/image";
 
@@ -25,6 +25,12 @@ export default async function PokemonList() {
   return (
     <div className="p-8">
       <div className="max-w-6xl mx-auto">
+        <Link
+          href="/"
+          className="mb-8 inline-flex items-center gap-2 rounded-xl border border-[#39f5a0]/55 bg-[#061c22]/90 px-5 py-3 text-sm font-black text-white shadow-[0_0_22px_rgba(57,245,160,0.12)] transition hover:-translate-y-0.5 hover:border-[#65ff82] hover:bg-[#0b302d]"
+        >
+          <IoArrowBack size={19} /> Volver al inicio
+        </Link>
         <h1 className="text-4xl font-bold text-white text-left mb-12 drop-shadow-lg">
           <IoMdList size={40} className="inline-block" /> Lista de Pokémons (ISR)
         </h1>
